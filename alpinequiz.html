@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="quizstyles.css">
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    </head>
+    <body>
+        <div class="main-parent">
+            <div class="child-1">
+                <h1>QUIZ</h1>
+            </div>
+            <p>Share your thoughts with us!We value your input.Let us know how we can enhance your experience.</p>
+            <div x-data="{ selectedOption: '' }" class="child-2">
+                <h3>1.What does HTML stand for?</h3>
+                <ul class="ul-list">
+                    <li :class="{ 'checked': selectedOption === 'Hyper Text Making Label'}" class="unchecked" x-on:click="selectedOption = 'Hyper Text Making Label'">Hyper Text Making Label</li>
+                    <li :class="{ 'checked': selectedOption === 'Home Tool Markup Legend'}" class="unchecked" x-on:click="selectedOption = 'Home Tool Markup Legend'">Home Tool Markup Legend</li>
+                    <li :class="{ 'checked': selectedOption === 'Hyper Text Markup Language'}" class="unchecked" x-on:click="selectedOption = 'Hyper Text Markup Language'">Hyper Text Markup Language</li>
+                    <li :class="{ 'checked': selectedOption === 'Hyperlinks and Text Markup Language'}" class="unchecked" x-on:click="selectedOption = 'Hyperlinks and Text Markup Language'">Hyperlinks and Text Markup Language</li>
+                </ul>
+            </div>
+            <div x-data="{ selectedOption: '' }" class="child-2">
+                <h3>2.What does CSS stand for?</h3> 
+                <ul class="ul-list">
+                    <li :class="{ 'checked': selectedOption === 'Cascading Style Sheet'}" class="unchecked" x-on:click="selectedOption = 'Cascading Style Sheet'">Cascading Style Sheet</li>
+                    <li :class="{ 'checked': selectedOption === 'Colored Special Sheet'}" class="unchecked" x-on:click="selectedOption = 'Colored Special Sheet'">Colored Special Sheet</li>
+                    <li :class="{ 'checked': selectedOption === 'Color ans Style Sheet'}" class="unchecked" x-on:click="selectedOption = 'Color ans Style Sheet'">Color ans Style Sheet</li>
+                    <li :class="{ 'checked': selectedOption === 'None of the above'}" class="unchecked" x-on:click="selectedOption = 'None of the above'">None of the above</li>
+                </ul>
+            </div>
+            <div x-data="{ selectedOption: '' }" class="child-2">
+                <h3>3.In how many ways can CSS be written in?</h3>
+                <ul class="ul-list">
+                    <li :class="{ 'checked': selectedOption === '1'}" class="unchecked" x-on:click="selectedOption = '1'">1</li>
+                    <li :class="{ 'checked': selectedOption === '2'}" class="unchecked" x-on:click="selectedOption = '2'">2</li>
+                    <li :class="{ 'checked': selectedOption === '3'}" class="unchecked" x-on:click="selectedOption = '3'">3</li>
+                    <li :class="{ 'checked': selectedOption === '4'}" class="unchecked" x-on:click="selectedOption = '4'">4</li>
+                </ul>
+            </div>
+            <div x-data="{ selectedOption: '' }" class="child-2">
+                <h3>4.What type of CSS is generally recommended for designing large web pages?</h3>
+                <ul class="ul-list">
+                    <li :class="{ 'checked': selectedOption === 'Inline'}" class="unchecked" x-on:click="selectedOption = 'Inline'">Inline</li>
+                    <li :class="{ 'checked': selectedOption === 'External'}" class="unchecked" x-on:click="selectedOption = 'External'">External</li>
+                    <li :class="{ 'checked': selectedOption === 'On page'}" class="unchecked" x-on:click="selectedOption = 'On page'">On page</li>
+                    <li :class="{ 'checked': selectedOption === 'None of the above'}" class="unchecked" x-on:click="selectedOption = 'None of the above'">None of the above</li>
+                </ul>
+            </div>
+            <div x-data="{ selectedOption: '' }" class="child-2">
+                <h3>5.How can we write comments in Javascript?</h3>
+                <ul class="ul-list">
+                    <li :class="{ 'checked': selectedOption === '#'}" class="unchecked" x-on:click="selectedOption = '#'">#</li>
+                    <li :class="{ 'checked': selectedOption === '/**/'}" class="unchecked" x-on:click="selectedOption = '/**/'">/**/</li>
+                    <li :class="{ 'checked': selectedOption === '$'}" class="unchecked" x-on:click="selectedOption = '$'">$</li>
+                    <li :class="{ 'checked': selectedOption === '//'}" class="unchecked" x-on:click="selectedOption = '//'">//</li>
+                </ul>
+            </div>
+            <div x-data="{ selectedOption: '' }" class="child-2">
+                <h3>6.We can make rounded borders around elements using which CSS element?</h3>
+                <ul class="ul-list">
+                    <li :class="{ 'checked': selectedOption === 'border-collapse'}" class="unchecked" x-on:click="selectedOption = 'border-collapse'">border-collapse</li>
+                    <li :class="{ 'checked': selectedOption === 'rounded-border'}" class="unchecked" x-on:click="selectedOption = 'rounded-border'">rounded-border</li>
+                    <li :class="{ 'checked': selectedOption === 'border-radius'}" class="unchecked" x-on:click="selectedOption = 'border-radius'">border-radius</li>
+                    <li :class="{ 'checked': selectedOption === 'None of the above'}" class="unchecked" x-on:click="selectedOption = 'None of the above'">None of the above</li>
+                </ul>
+            </div>
+            <div x-data="{ selectedOption: '' }" class="child-2">
+                <h3>7.How many sizes of headers are available in HTML by default?</h3>
+                <ul class="ul-list">
+                    <li :class="{ 'checked': selectedOption === '1'}"  class="unchecked" x-on:click="selectedOption = '1'">1</li>
+                    <li :class="{ 'checked': selectedOption === '3'}"  class="unchecked" x-on:click="selectedOption = '3'">3</li>
+                    <li :class="{ 'checked': selectedOption === '5'}"  class="unchecked" x-on:click="selectedOption = '5'">5</li>
+                    <li :class="{ 'checked': selectedOption === '6'}"  class="unchecked" x-on:click="selectedOption = '6'">6</li>
+                </ul>
+            </div>
+            <div x-data="{ selectedOption: null }" class="child-2">
+                <h3>8.What are the types of lists available in HTML?</h3>
+                <ul class="ul-list">
+                    <li :class="{ 'checked': selectedOption === 'Orderd,Unorderd List'}" class="unchecked" x-on:click="selectedOption = 'Orderd,Unorderd List'">Orderd,Unorderd List</li>
+                    <li :class="{ 'checked': selectedOption === 'Bulleted,Numbered List'}" class="unchecked" x-on:click="selectedOption = 'Bulleted,Numbered List'">Bulleted,Numbered List</li>
+                    <li :class="{ 'checked': selectedOption === 'Named,Unnamed List'}" class="unchecked" x-on:click="selectedOption = 'Named,Unnamed List'">Named,Unnamed List</li>
+                    <li :class="{ 'checked': selectedOption === 'None of the above'}" class="unchecked" x-on:click="selectedOption = 'None of the above'">None of the above </li>
+                </ul>
+            </div>
+            <div x-data="{ selectedOption: '' }" class="child-2">
+                <h3>9.We enclose HTML tags within?</h3>
+                <ul class="ul-list">
+                    <li :class="{ 'checked': selectedOption === '{}'}"  class="unchecked" x-on:click="selectedOption = '{}'">{ }</li>
+                    <li :class="{ 'checked': selectedOption === '<>'}"  class="unchecked" x-on:click="selectedOption = '<>'" style="font-weight: 900;">< > </li>
+                    <li :class="{ 'checked': selectedOption === '!!'}" class="unchecked" x-on:click="selectedOption = '!!'">! !</li>
+                    <li :class="{ 'checked': selectedOption === '[]'}" class="unchecked" x-on:click="selectedOption = '[]'">[ ]</li>
+                </ul>
+            </div>
+            <div x-data="{ selectedOption: '' }" class="child-2">
+                <h3>10. Which attribute is used to provide a unique name to an HTML element?</h3>
+                <ul class="ul-list">
+                    <li :class="{ 'checked': selectedOption === 'ID' }" class="unchecked" x-on:click="selectedOption = 'ID'">ID</li>
+                    <li :class="{ 'checked': selectedOption === 'Class' }" class="unchecked" x-on:click="selectedOption = 'Class'">Class</li>
+                    <li :class="{ 'checked': selectedOption === 'Type' }" class="unchecked" x-on:click="selectedOption = 'Type'">Type</li>
+                    <li :class="{ 'checked': selectedOption === 'None of the above' }" class="unchecked" x-on:click="selectedOption = 'None of the above'">None of the above</li>
+                </ul>
+            </div>
+            <div class="child-3">
+                <button class="button">Check your score</button>
+                <div class="score">score:</div> 
+                <div class="result"></div>
+            </div>
+           
+    </body>
+</html>
