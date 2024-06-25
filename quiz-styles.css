@@ -27,7 +27,6 @@ p{
 .child-2{
     padding: 10px;
     margin-left: 10px;
-    padding-top: 0;
 }
 .child-3{
     display: flex;
@@ -46,8 +45,8 @@ li{
     content: '';
     position: absolute;
     left:-35px;
-    top: 0px;
-    background-image: url(dry-clean.png);
+    top: -3px;
+    background-image: url(icons/dry-clean.png);
     height: 24px;
     width: 24px;
     cursor: pointer;
@@ -56,10 +55,21 @@ li{
     content: '';
     position: absolute;
     left:-31px;
-    top: 4px;
-    background-image: url(new-moon.png);
+    top: 1px;
+    background-image: url(icons/new-moon.png);
     height: 16px;
     width: 16px;
+    cursor: pointer;
+}
+.button{
+    height: 50px;
+    width: 200px;
+    border-radius: 0 10px 0 10px;
+    background-color: #2D2D2D;
+    color: #FFFFFF;
+    font-size: 17px;
+    font-weight: 800;
+    margin-bottom: 15px;
     cursor: pointer;
 }
 .score{
@@ -73,14 +83,17 @@ li{
     font-weight: 900;
     text-decoration: underline;
 }
-.button{
-    height: 50px;
-    width: 200px;
-    border-radius: 0 10px 0 10px;
-    background-color: #2D2D2D;
-    color: #FFFFFF;
-    font-size: 17px;
-    font-weight: 800;
-    margin-bottom: 15px;
-    cursor: pointer;
+.tick::before{
+    content: '';
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    background-image: url(icons/check.png);
+}
+.cross::after{
+    content: '';
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    background-image: url(icons/cross.png);
 }
