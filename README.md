@@ -1,2 +1,0 @@
-# quiz-repo
-# quiz-structure
