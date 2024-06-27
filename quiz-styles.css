@@ -73,9 +73,9 @@ li{
     cursor: pointer;
 }
 .score{
-    font-size:35px;
+    font-size:30px;
     font-weight:10px;
-    margin-bottom:15px;
+   
 }
 .result{
     width: 80%;
