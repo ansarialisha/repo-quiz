@@ -101,8 +101,8 @@
             </div>
             <div class="child-3">
                 <button class="button" @click="showResult()">Check your score</button>
-                <div class="score">score:</div> 
-                <div class="result" x-text="resultText"></div>
+                <div class="score">score:<span x-html="finalScore"></span></div> 
+                <div class="result" x-html="resultHtml"></div>
             </div>
         </div>  
         
@@ -110,7 +110,7 @@
             function alpineComponent(){
                 return { 
                     finalScore: 0,
-                    resultText: '',
+                    resultHtml: '',
                     answerClicked: function(el){
                         // Get all siblings of el (excluding el itself)
                         let siblings = el.parentNode.children;
@@ -169,16 +169,14 @@
                         const totalQuestions = questions.length;
                         const scorePercentage = (score / totalQuestions) * 100;
 
-                        const scoreDisplay = document.querySelector('.result');
-                        scoreDisplay.innerHTML =  score + '/' + totalQuestions + ' (' + scorePercentage.toFixed(2) + '%)';
+                        this.finalScore =  score + '/' + totalQuestions + ' (' + scorePercentage.toFixed(2) + '%)';
 
-                        const resultDisplay = document.querySelector('.result');
                         if (score === totalQuestions) { 
-                            resultDisplay.innerHTML += '<br>Congratulations! You got all the answers correct!';
+                            this.resultHtml = '<br>Congratulations! You got all the answers correct!';
                         } else {
-                            resultDisplay.innerHTML += '<br>Keep practicing!';
+                            this.resultHtml += '<br>Keep practicing!';
                         }
-                        
+
                     }
                 }
             }
